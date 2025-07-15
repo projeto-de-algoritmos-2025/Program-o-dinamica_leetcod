@@ -14,32 +14,25 @@
 ## Sobre 
 O projeto consiste na resolução de questões que examinam o conteúdo visto na sala de aula 
 
-## Problema 1: [785 Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/solutions/?envType=problem-list-v2&envId=graph)
-- Nível: Médio
-- Implementação:
+## Problema 1: [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
+- Nível: difícil
 
-**_ _**
+**_Selecione um subconjunto de trabalhos não sobrepostos para maximizar o lucro total.
+Requer DP com busca binária para lidar com intervalos e sobreposições._**
   
-![](./0785.png)
-## Problema 2: [332 Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/)
-- Nível: 
-- Implementação:[Código 2](https://github.com/projeto-de-algoritmos-2025/Grafos-1/blob/main/332.%20Reconstruct%20Itinerary)
 
-**__**
+## Problema 2: [1671. Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/description/)
+- Nível: difícil
+**_Transforme um array em forma de montanha removendo o mínimo de elementos.
+Combina LIS à esquerda e LDS à direita usando DP._**
 
-![](./332.png)
+## Problema 3: [474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/)
+- Nível: difícil
+**_Escolha o maior subconjunto de strings binárias respeitando limites de zeros e uns.
+Extensão do 0/1 Knapsack com dois recursos e DP bidimensional._**
 
-## Problema 3: [3017 Count the Number of Houses at a Certain Distance II](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/description/)
-- Nível: 
-- Implementação:
-- 
-**__**
-
-![](./3017.png)
-
-## Problema 4: [834 Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/)
-- Nível: 
-- Implementação:
+## Problema 4:
+- Nível: difícil
 
 **__**
 
