@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int dp[601][101][101];
+    int recurse(vector<string>& strs, int m, int n, int index){
+        if(index == strs.size()) return 0;
+        if(m == 0 && n == 0) return 0;
+        if(dp[index][m][n] != -1) return dp[index][m][n];
+        string s = strs[index];
+        int count_zero = 0;
+        int count_one = 0;
+        for(char c: s)
+            if(c == '0') count_zero++;
+            else count_one++; 
+        int chose = 0;
+        if(count_zero<=m && count_one<=n){
+            chose = 1+recurse(strs,m-count_zero,n-count_one,index+1);
+        }
+        return dp[index][m][n] = max(chose,recurse(strs,m,n,index+1));
+    }
+    
+    int findMaxForm(vector<string>& strs, int m, int n) {
+        for(int i=0;i<=600;i++)
+            for(int j=0;j<=100;j++)
+                for(int k=0;k<=100;k++)
+                    dp[i][j][k] = -1;
+        int index = 0;
+        return recurse(strs,m,n,index);
+    }
+};
